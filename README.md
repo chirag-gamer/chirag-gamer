@@ -38,40 +38,37 @@
 ## What I Build
 
 ### 🔐 Infrastructure & Authentication
+**PlayerAuth** — Custom access-control plugin for Minecraft networks running Velocity proxy. Handles packet-level authentication, session management, and hybrid premium/cracked access with whitelist override. Operates with `online-mode=false` while behaving like a premium-only network. Built for maintainability and version-upgrade resilience across future Minecraft releases.
 
-**PlayerAuth** is a custom access-control plugin for Minecraft networks running on Velocity proxy. The whole network operates with `online-mode=false`, but behaves like a premium-only setup. Premium users join without friction. Cracked users get blocked unless they're on an explicit whitelist — and even then, they go through a manual authentication flow.
+> **Stack:** Java, Velocity Proxy API, Purpur · [discord.gg/unstableleaks](https://discord.gg/unstableleaks)
 
-It handles packet-level authentication, session management, and the hybrid premium/cracked access logic. Built specifically to survive Minecraft version upgrades with minimal changes. This is running in production at [UnstableLeaks](https://discord.gg/unstableleaks), where I lead development.
-
-> **Stack:** Java, Velocity Proxy API, Purpur
-
+<table><tr><td>
 <details>
 <summary><b>Why this matters</b></summary>
 <br/>
-Running <code>online-mode=false</code> is how most cracked servers operate. But I built a system that makes a fully offline-mode network behave like a premium-only service. Premium players never notice anything different. Cracked players get rejected unless explicitly whitelisted — and those whitelisted accounts authenticate through a manual verification flow. This solves the biggest problem Minecraft networks face: protecting the experience for legitimate premium users while offering controlled access for specific non-premium accounts. All without touching online-mode.
+Most Minecraft networks either run fully offline (no auth) or fully online (no cracked users). PlayerAuth bridges both — premium users pass through seamlessly, cracked users hit a manual authentication gate. Only whitelisted cracked accounts get through. This protects legitimate premium players while still allowing specific non-premium users controlled access. All without touching online-mode.
 </details>
+</td></tr></table>
 
 ---
 
-### 🚀 Products
+### 🚀 Product & Platforms
 
-I run **[tasknode.io](https://tasknode.io)**, a research platform built with Next.js, React, TypeScript, and TailwindCSS. I handle everything — architecture, development, deployment, scaling.
+- **tasknode.io** — CEO/Founder. Research platform built with Next.js, React, TypeScript, and TailwindCSS. I handle everything — architecture, development, deployment, scaling.
+- **Compix Cloud** *(2024)* — Game server hosting platform. Scaled to 6,000+ members and generated ₹8,000 INR in the first 25 days of launch.
+- **Trovo Fi** — Creative Lead. I maintain design systems across tech, product, and marketing. Making sure everything looks consistent at scale.
 
-In 2024 I founded **Compix Cloud**, a game server hosting platform. Within 25 days of launch we hit 6,000+ members and generated ₹8,000 INR. I shut it down later that year, but the launch taught me more than most internships ever would.
-
-I also serve as Creative Lead at **[Trovo Fi](https://www.linkedin.com/company/trovo-fi-private-limited/)**, where I maintain design systems across tech, product, and marketing. Making sure everything looks consistent at scale.
-
-> **Stack:** TypeScript, Next.js, React, TailwindCSS, shadcn/ui
+> **Stack:** TypeScript, Next.js, React, TailwindCSS, shadcn/ui · [tasknode.io](https://tasknode.io) · [Trovo Fi](https://www.linkedin.com/company/trovo-fi-private-limited/)
 
 ---
 
 ### 📡 Data & Pipelines
 
-**[Wirepulse](https://apify.com/chiraggamer/wirepulse)** is an Apify Actor that tracks financial press releases by ticker symbol in real time. Earnings surprises, FDA approvals, merger announcements — the stuff that moves markets. Delivered within milliseconds of publication.
+**Wirepulse** — Apify Actor that tracks real-time financial press releases by ticker symbol. Monitors earnings surprises, FDA approvals, and merger announcements — delivering data within milliseconds of publication.
 
-I also built a distributed crawling architecture that handled 27,000+ news sources. Parallelized fetchers, hybrid extraction strategies, and self-healing selectors kept it running when individual sources went down. Tools: Trafilatura, Beautiful Soup, Playwright, Puppeteer.
+**News Aggregation Pipeline** — Distributed crawling architecture handling 27,000+ news sources. Parallelized fetchers, hybrid extraction strategies, and self-healing selectors kept it running when individual sources went down. Tools: Trafilatura, Beautiful Soup, Playwright, Puppeteer.
 
-> **Stack:** Python, Apify, Playwright, Puppeteer, Trafilatura, Beautiful Soup
+> **Stack:** Python, Apify, Playwright, Puppeteer, Trafilatura, Beautiful Soup · [Wirepulse on Apify](https://apify.com/chiraggamer/wirepulse)
 
 ---
 
@@ -79,7 +76,7 @@ I also built a distributed crawling architecture that handled 27,000+ news sourc
 
 I build complete YouTube content pipelines — niche research, channel setup, scripting, AI voiceovers, editing, SEO, thumbnails, and analytics. Every step. Specialized in AI realism and faceless content.
 
-I don't just edit. I figure out what niches actually make money, design the content strategy, and build the system that keeps the channel running. My work is split between client projects and my own channels.
+I don't just edit. I figure out what niches actually make money, design the content strategy, and build the system that keeps the channel running.
 
 | Portfolio | Type |
 |-----------|------|
@@ -91,48 +88,9 @@ I don't just edit. I figure out what niches actually make money, design the cont
 
 ### ⚙️ Operations & Engineering
 
-- **[Bytez.com](https://bytez.com)** — Lead support team operations
-- **[A4f.co](https://a4f.co)** — Backend models uptime and security audits
-- Built a custom ERP ([Next.js](https://nextjs.org)) for a local hardware shop — accounting, bookkeeping, stock management, sales CRM, and outreach automation. Replaced their Excel sheets with something that actually works.
-
----
-
-## Competencies
-
-<table>
-  <tr>
-    <td valign="top" width="33%">
-      <h4>📐 Strategic</h4>
-      <sub>
-        Team Management<br/>
-        Strategic Planning & Operations<br/>
-        Technology & Data Analysis<br/>
-        Legal & Compliance<br/>
-        Accounting & Book-keeping
-      </sub>
-    </td>
-    <td valign="top" width="33%">
-      <h4>⚙️ Technical</h4>
-      <sub>
-        Production-Grade Pipelines<br/>
-        Distributed Crawling Architecture<br/>
-        Packet-Level Authentication<br/>
-        Full-Stack Web (Next.js, TypeScript)<br/>
-        Minecraft Plugin Development
-      </sub>
-    </td>
-    <td valign="top" width="33%">
-      <h4>🎨 Creative</h4>
-      <sub>
-        AI Video Production (UGC & Films)<br/>
-        Content Monetization Systems<br/>
-        SEO & Thumbnail Strategy<br/>
-        AI Realism Specialist<br/>
-        Prompt & Context Engineering
-      </sub>
-    </td>
-  </tr>
-</table>
+- **Bytez.com** — Leading Support Team operations
+- **A4f.co** — Backend Models Uptime & Security Audits Manager
+- Built a custom ERP for a local hardware shop — accounting, bookkeeping, stock management, sales CRM, and outreach automation in Next.js
 
 ---
 
@@ -184,14 +142,14 @@ I don't just edit. I figure out what niches actually make money, design the cont
 ## Open Source
 
 ### PocketUI — Form Library for PocketMine-MP
-A fluent API for building interactive UIs in Minecraft Bedrock servers. Supports Simple Forms (button menus), Modal Forms (dialogs), and Custom Forms (inputs, sliders, toggles), all with chained callbacks.
+Fluent API for building interactive UIs in Minecraft Bedrock servers. Supports Simple Forms (button menus), Modal Forms (dialogs), and Custom Forms (inputs, sliders, toggles) with chained callbacks.
 
 ```
 ⭐ 1  |  🍴 1  |  PHP  |  Apache-2.0
 ```
 
 ### GraveLoot — Death Chests Plugin
-Smart death chest system for PocketMine-MP. Creates single or double chests on player death based on how much inventory they had, with glowing particle guides and configurable timers. Survives explosions and cleans itself up.
+Smart death chest system for PocketMine-MP. Auto-creates single/double chests based on inventory size with glowing particle guides and configurable timers. Survival-proof: chests survive explosions and auto-cleanup.
 
 ```
 ⭐ 0  |  🍴 0  |  PHP  |  Apache-2.0
@@ -224,6 +182,29 @@ Smart death chest system for PocketMine-MP. Creates single or double chests on p
   <a href="https://github.com/chirag-gamer">
     <img src="https://streak-stats.demolab.com/?user=chirag-gamer&theme=github-dark&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
   </a>
+</p>
+
+<br/>
+
+---
+
+## Competencies
+
+<p>
+  <img src="https://img.shields.io/badge/System_Architecture-critical?style=flat-square&logo=amazonwebservices&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Distributed_Systems-critical?style=flat-square&logo=consul&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Production_Pipelines-critical?style=flat-square&logo=githubactions&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Prompt_Engineering-critical?style=flat-square&logo=openai&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Context_Engineering-critical?style=flat-square&logo=anthropic&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Data_Extraction-critical?style=flat-square&logo=webpack&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/AI_Filmmaking-critical?style=flat-square&logo=adobepremierepro&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/SEO_Strategy-critical?style=flat-square&logo=google&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Content_Monetization-critical?style=flat-square&logo=youtube&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Team_Management-critical?style=flat-square&logo=asana&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Strategic_Planning-critical?style=flat-square&logo=notion&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Compliance_&_Legal-critical?style=flat-square&logo=bookstack&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Bookkeeping-critical?style=flat-square&logo=quickbooks&logoColor=white&color=2bbc8a" />
+  <img src="https://img.shields.io/badge/Design_Governance-critical?style=flat-square&logo=figma&logoColor=white&color=2bbc8a" />
 </p>
 
 <br/>
@@ -269,4 +250,4 @@ Smart death chest system for PocketMine-MP. Creates single or double chests on p
 
 ---
 
-<sub>Last refresh: <code>2026-05</code></sub>
+<sub>Last refresh: <code>2026-05</code> — Built with GitHub Actions automated stats</sub>
