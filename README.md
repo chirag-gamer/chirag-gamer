@@ -26,7 +26,7 @@
   <a href="https://discord.gg/unstableleaks">
     <img src="https://img.shields.io/badge/Discord-UnstableLeaks-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
   </a>
-  <a href="mailto:chirag@tasknode.io">
+  <a href="mailto:chirag@luxbot.xyz">
     <img src="https://img.shields.io/badge/Contact-Email-informational?style=flat-square&logo=gmail&logoColor=white&color=2bbc8a" alt="Email" />
   </a>
 </p>
